@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+ <style>
+    body{
+    font-family: sans-serif;
+}
+.box{
+    color:#fff;
+    text-align: end;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(148, 148, 148);
+    position: relative;
+    border-radius: 2px;
+    border: 2px solid #000000;
+    transition: transform 0.1s;
+}
+.text{
+    position: relative;
+}
+.text p{
+    max-width: 60%;
+}
+.Cont{
+    height: 500px;
+    width: 800px;
+    margin: 80px auto;
+    border: 2px solid #a8a8a8;
+}
+.items{
+    margin-top: 50px;
+    
+}
+.Cont p{
+    position: absolute;
+    font-size: 17px;
+    padding: 20px;
+}
+.box p{
+    font-size: 13px;
+    padding: 0 10px;
+}
+span{
+    font-size: 25px;
+    padding: 15px;
+}
+.bA{
+    left: 550px;
+    background-color: #06f8ec;
+}
+.bB{
+    left: 500px;
+    bottom: 50px;
+    background-color: #15c5bc;
+}
+.bC{
+    left: 450px;
+    bottom: 100px;
+    background-color: #27a39d;
+}
+.bD{
+    left: 400px;
+    bottom: 150px;
+    background-color: #328580;
+}
+.bE{
+    left: 350px;
+    bottom: 200px;
+    background-color: #2e6360;
+}
+.bF{
+    left: 300px;
+    bottom: 250px;
+    background-color: #304746;
+}
+
+/* Added hover effect */
+.box:hover {
+    transform: scale(1.2);
+}
+  </style>
+</head>
+<body>
+    
+    <div class="Cont">
+
+       
+        <div class="text">
+           <p>z-index is a CSS property determining the vertical stacking order of elements on a webpage. Elements with higher z-index values appear above those with lower values. It applies to positioned elements like relative, absolute, or fixed. Default stacking is based on HTML order. Siblings' stacking is relative to their parent. Negative values are valid. It doesn't affect elements outside its context. </p>
+        </div> 
+        <div class="items">
+            <div class="box bA"><p>Z-index 1</p><span>A</span></div>
+            <div class="box bB"><p>Z-index 2</p><span>B</span></div>
+            <div class="box bC"><p>Z-index 3</p><span>C</span></div>
+            <div class="box bD"><p>Z-index 4</p><span>D</span></div>
+            <div class="box bE"><p>Z-index 5</p><span>E</span></div>
+            <div class="box bF"><p>Z-index 6</p><span>F</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

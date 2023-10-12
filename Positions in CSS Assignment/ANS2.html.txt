@@ -1,0 +1,20 @@
+ANS2:-(A) Relative Positioning:
+Relative positioning is based on the element's normal position flow. When you set an element to be relatively positioned, it remains in the normal document flow, but you can adjust its position relative to where it would be normally.
+
+div style="position: relative; left: 50px; top: 30px;"
+  This is a relatively positioned div.
+/div
+
+In this example, the <div> is set to be relatively positioned. The left: 50px; and top: 30px; properties move the <div> 50 pixels to the right and 30 pixels down from where it would normally be.
+
+(B) Absolute Positioning:
+Absolute positioning, on the other hand, removes the element from the normal document flow. It positions the element relative to its nearest positioned ancestor (an ancestor element with a position of relative, absolute, or fixed).
+
+div style="position: relative;"
+  This is the container div.
+  div style="position: absolute; left: 50px; top: 30px;"
+    This is an absolutely positioned div.
+  /div
+/div
+
+In this example, the inner <div> is set to be absolutely positioned. It will be positioned 50 pixels to the right and 30 pixels down from the top-left corner of the nearest ancestor element with a position of relative (<div> with position: relative; in this case).
